@@ -9,8 +9,12 @@ public class Main {
 
 
         System.out.println("TeMpErAtUrANALySaToRn 9001");
-        temperatures();
+        double temp[] = temperatures();
 
+        for(int i= 0; i<temp.length; i++){
+
+            System.out.println("Temp " +(i+1) +": ");
+        }
 
     }
     private static double[] temperatures(){
@@ -27,6 +31,7 @@ public class Main {
         }}
         return temps;
     }
+
 
     private static double inputd(){
         Scanner in = new Scanner(System.in);
